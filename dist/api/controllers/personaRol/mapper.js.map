@@ -1,0 +1,1 @@
+{"version":3,"file":"mapper.js","sourceRoot":"","sources":["../../../../src/api/controllers/personaRol/mapper.ts"],"names":[],"mappings":";;;AAGO,MAAM,YAAY,GAAG,CAAC,UAA4B,EAAc,EAAE;IACrE,OAAM;QACH,YAAY,EAAE,UAAU,CAAC,YAAY;QACrC,SAAS,EAAE,UAAU,CAAC,SAAS;QAC/B,KAAK,EAAE,UAAU,CAAC,KAAK;KACzB,CAAA;AACL,CAAC,CAAA;AANY,QAAA,YAAY,gBAMxB"}

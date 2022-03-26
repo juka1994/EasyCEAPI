@@ -1,0 +1,18 @@
+import { Request, Response, NextFunction } from 'express'
+import LocalCache from './local-cache'
+
+export const checkCache = (req: Request, res: Response, next: NextFunction) =>{
+    try {
+        const {baseUrl, method} = req
+        const [,,,cacheKey] = baseUrl.split('/')
+
+        if(method === 'GET' && LocalCache.haskey(cacheKey)){
+            const data = LocalCache.get(cacheKey)
+
+            return res.status(200).send(data)
+        }
+        next()
+    } catch (error) {
+        throw error
+    }
+}
